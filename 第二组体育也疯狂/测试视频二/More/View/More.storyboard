@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="neW-Xm-gqH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base Nav Controller-->
+        <scene sceneID="ZXL-9f-RZR">
+            <objects>
+                <navigationController id="neW-Xm-gqH" customClass="BaseNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tTh-id-Nyv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.77647058823529413" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3Sg-hZ-PfE" kind="relationship" relationship="rootViewController" id="ceI-c5-lNE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMt-L6-JO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-301.33333333333331" y="301.98666666666668"/>
+        </scene>
+        <!--其他-->
+        <scene sceneID="aI2-kW-ZDL">
+            <objects>
+                <viewController id="3Sg-hZ-PfE" customClass="MoreViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="edk-cj-9Zp"/>
+                        <viewControllerLayoutGuide type="bottom" id="vHN-Yy-Saz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fpA-eM-N4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJ0-2t-8SC">
+                                <rect key="frame" x="47" y="109" width="207" height="48"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Ahw-NN-zDE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="170" maxY="20"/>
+                                <state key="normal" title="关于我们">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="aboutMeButton:" destination="3Sg-hZ-PfE" eventType="touchUpInside" id="hW1-gV-ceZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="制作团队和联系方式" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDC-ny-8Jo">
+                                <rect key="frame" x="60" y="136" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbV-3f-RJn">
+                                <rect key="frame" x="47" y="165" width="207" height="48"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="e9l-06-LXe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="170" maxY="20"/>
+                                <state key="normal" title="版本介绍">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bbtButton:" destination="3Sg-hZ-PfE" eventType="touchUpInside" id="aMV-OR-heH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXh-ZP-Y6P">
+                                <rect key="frame" x="47" y="221" width="207" height="48"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="N4J-43-NGt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="170" maxY="20"/>
+                                <state key="normal" title="版权声明">
+                                    <color key="titleColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="lennoveButton:" destination="3Sg-hZ-PfE" eventType="touchUpInside" id="sNk-B3-ApU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsb-pR-FPx">
+                                <rect key="frame" x="47" y="277" width="207" height="48"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="QTq-FT-ZNk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="170" maxY="20"/>
+                                <state key="normal" title="清除缓存">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearnButton:" destination="3Sg-hZ-PfE" eventType="touchUpInside" id="x5K-FX-gLA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="清除缓存图片" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6p-vY-fU6">
+                                <rect key="frame" x="60" y="302" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="缓存" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97z-3U-Uvi">
+                                <rect key="frame" x="204" y="295" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="版本的最终解释权" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLJ-XB-tRt">
+                                <rect key="frame" x="60" y="248" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="版本：1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3E-zk-EYw">
+                                <rect key="frame" x="60" y="187" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IbV-3f-RJn" firstAttribute="top" secondItem="BJ0-2t-8SC" secondAttribute="bottom" constant="8" id="3UW-r5-IKN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IbV-3f-RJn" secondAttribute="trailing" constant="50" id="8UQ-ve-Wre"/>
+                            <constraint firstItem="BJ0-2t-8SC" firstAttribute="leading" secondItem="fpA-eM-N4Q" secondAttribute="leadingMargin" constant="31" id="8X1-FK-hXG"/>
+                            <constraint firstItem="BJ0-2t-8SC" firstAttribute="top" secondItem="edk-cj-9Zp" secondAttribute="bottom" constant="45" id="9CG-Xq-Flq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XXh-ZP-Y6P" secondAttribute="trailing" constant="50" id="9IQ-FZ-mZl"/>
+                            <constraint firstItem="Dsb-pR-FPx" firstAttribute="leading" secondItem="fpA-eM-N4Q" secondAttribute="leadingMargin" constant="31" id="9Ka-aQ-8ed"/>
+                            <constraint firstItem="XXh-ZP-Y6P" firstAttribute="top" secondItem="IbV-3f-RJn" secondAttribute="bottom" constant="8" id="KTH-HS-eTF"/>
+                            <constraint firstItem="XXh-ZP-Y6P" firstAttribute="leading" secondItem="fpA-eM-N4Q" secondAttribute="leadingMargin" constant="31" id="g1w-jj-OBk"/>
+                            <constraint firstItem="IbV-3f-RJn" firstAttribute="leading" secondItem="fpA-eM-N4Q" secondAttribute="leadingMargin" constant="31" id="gSG-mH-Ats"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BJ0-2t-8SC" secondAttribute="trailing" constant="50" id="jEj-4k-ZAB"/>
+                            <constraint firstItem="Dsb-pR-FPx" firstAttribute="top" secondItem="XXh-ZP-Y6P" secondAttribute="bottom" constant="8" id="msD-li-WCV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dsb-pR-FPx" secondAttribute="trailing" constant="50" id="qfw-ko-ikn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="其他" id="4J6-yu-soi"/>
+                    <connections>
+                        <outlet property="cacheLable" destination="97z-3U-Uvi" id="KjR-DH-opK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c7S-7P-E9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67" y="301"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
